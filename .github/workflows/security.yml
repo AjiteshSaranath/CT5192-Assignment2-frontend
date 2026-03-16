@@ -32,7 +32,7 @@ jobs:
       - name: Create sonar-project.properties
         env:
           SONAR_ORG: ${{ secrets.SONAR_ORGANIZATION }}
-          SONAR_KEY: ${{ secrets.SONAR_PROJECT_KEY_FRONTEND }}
+          SONAR_KEY: ${{ secrets.SONAR_PROJECT_KEY }}
         run: |
           echo "sonar.organization=${SONAR_ORG}" > sonar-project.properties
           echo "sonar.projectKey=${SONAR_KEY}" >> sonar-project.properties
